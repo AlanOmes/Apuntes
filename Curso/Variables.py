@@ -1,6 +1,6 @@
 # Teoria: variables
 
-nombre= "Alan"
+nombre = "Alan"
 apellido = "Omes"
 edad = "21"
 
