@@ -70,5 +70,9 @@ print (lenguajes)
 
 # Eliminar por nombre
 
+'''
+
 lenguajes.remove ('Python')
 print (lenguajes)
+
+'''
