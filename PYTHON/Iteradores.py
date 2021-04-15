@@ -11,10 +11,18 @@ for lenguaje in lenguajes:
 
 # For que escriba numeros
 
+'''
+
 for numero in range (0, 20):
     print (numero)
 
+'''
+
 # For que escriba numeros en escalas 
+
+'''
 
 for numero in range (0, 20, 3):
     print (numero)
+
+'''
