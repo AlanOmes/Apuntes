@@ -53,8 +53,6 @@ elif pregunta_1 == 'si':
     print ('Respuesta correcta')
 elif pregunta_1 == 'Si':
     print ('Respuesta correcta')
-elif correcta == puntaje + 1:
-    print ('Ha sumado 1 punto')
 elif pregunta_1 == incorrecta:
     print ('Respuesta incorrecta')
 elif pregunta_1 == 'No':
