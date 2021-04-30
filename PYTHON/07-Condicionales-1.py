@@ -39,7 +39,7 @@ else:
 
 lenguaje = 'Python'
 if not lenguaje == 'Python': # Not: nega la condición -> si es true, negado se hace false
-    print ('Excelente decisión)
+    print ('Excelente decisión')
     
 
 '''
