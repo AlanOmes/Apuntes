@@ -230,6 +230,8 @@ for posicion in range (posicion, -1, -1):
 # Escribir un programa en el que se pregunte al usuario por una frase y una letra, y muestre por pantalla
 # el numero de veces que aparece la letra en la frase
 
+'''
+
 frase = input ("Escriba una frase:")
 letra = input ("Elija una letra:")
 longitud = len(frase)
@@ -237,3 +239,5 @@ longitud = len(frase)
 for i in frase:
      if i == letra:
         print ()
+
+'''
