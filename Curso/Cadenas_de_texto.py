@@ -29,10 +29,10 @@ print("Letra", palabra [1]) # o
 print("Letra", palabra [2]) # l
 print("Letra", palabra [3]) # a
 
-print("Negativo:", palabra [-1])
-print("Negativo:", palabra [-2])
-print("Negativo:", palabra [-3])
-print("Negativo:", palabra [-4])
+print("Negativo:", palabra [-1]) # a
+print("Negativo:", palabra [-2]) # l
+print("Negativo:", palabra [-3]) # o
+print("Negativo:", palabra [-4]) # h
 
 print("Todos:", palabra[:])
 print("Todos:", palabra [2:50]) # principio:final
