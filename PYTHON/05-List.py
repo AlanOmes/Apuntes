@@ -14,7 +14,7 @@ print (lenguajes)
 
 '''
 
-# Acceder a un elemento dentro de un texto
+# Acceder a un elemento dentro de una lista
 
 '''
 
