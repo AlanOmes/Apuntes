@@ -50,6 +50,7 @@ print(palabra)
 print(palabra.capitalize()) # empieza con mayuscula la palabra
 print(palabra.find("h")) # devuelve la posicion de la letra en el string
 print(palabra.upper()) # pasa la palabra a mayuscula 
+print (palabra.lower()) # convierte la palabra a minúscula
 
 """
 
