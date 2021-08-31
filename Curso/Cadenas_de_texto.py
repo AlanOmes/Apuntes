@@ -60,6 +60,17 @@ print (palabra.title()) # si hay más de una palabra en la variable, hace que to
 """palabra = "hola soy un texto"
 print(palabra.split())"""
 
+# Si quiero cortar o borrar determinada parte de una cadena de texto:
+
+'''
+
+a = "/casa/coche-je"
+palabra = a.split("/")[-1].split("-")[0] 
+
+print (palabra) #coche
+
+'''
+
 # Ingresar datos por teclado
 
 print("¿Como se llama?")
