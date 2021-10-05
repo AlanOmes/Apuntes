@@ -55,6 +55,16 @@ print (palabra.title()) # si hay más de una palabra en la variable, hace que to
 
 """
 
+# Eliminar la letra de una palabra por posición 
+
+'''
+
+palabra = 'casa'
+palabra = palabra[:2] + palabra[2 + 1:] # corta la palabra a partir de la posición marcada y le suma el resto de la palabra
+print (palabra) # Ejecuta : caa
+
+'''
+
 # Metodo split
 
 """palabra = "hola soy un texto"
