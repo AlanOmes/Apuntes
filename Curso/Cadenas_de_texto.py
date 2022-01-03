@@ -2,7 +2,7 @@
 
 """nombre = "Alan"
 apellido = "Omes"
-edad = "24 años"
+edad = "24 anios"
 print ("hola mi nombre es:{0} {1} y mi edad es {2}".format(nombre,apellido,edad))
 print (f"Hola, mi nombre es {nombre} {apellido} y mi edad es {edad}")"""
 
@@ -23,7 +23,7 @@ print(len(palabra)) # imprime la cantidad de letras que tiene el string
 
 '''
 
-palabra = "hola" # Tamaño = 4 // Rango = T - 1 
+palabra = "hola" # Tamanio = 4 // Rango = T - 1 
 print("Letra", palabra [0]) # h
 print("Letra", palabra [1]) # o
 print("Letra", palabra [2]) # l
@@ -50,17 +50,17 @@ print(palabra)
 print(palabra.capitalize()) # empieza con mayuscula la palabra
 print(palabra.find("h")) # devuelve la posicion de la letra en el string
 print(palabra.upper()) # pasa la palabra a mayuscula 
-print (palabra.lower()) # convierte la palabra a minúscula
-print (palabra.title()) # si hay más de una palabra en la variable, hace que todas empiecen en mayúscula
+print (palabra.lower()) # convierte la palabra a minuscula
+print (palabra.title()) # si hay mas de una palabra en la variable, hace que todas empiecen en mayuscula
 
 """
 
-# Eliminar la letra de una palabra por posición 
+# Eliminar la letra de una palabra por posicion 
 
 '''
 
 palabra = 'casa'
-palabra = palabra[:2] + palabra[2 + 1:] # corta la palabra a partir de la posición marcada y le suma el resto de la palabra
+palabra = palabra[:2] + palabra[2 + 1:] # corta la palabra a partir de la posicion marcada y le suma el resto de la palabra
 print (palabra) # Ejecuta : caa
 
 '''
