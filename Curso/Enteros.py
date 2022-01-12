@@ -2,7 +2,7 @@
 
 """suma = 1 + 1 
 resta = 1 - 1	
-multiplicación = 1 * 2
+multiplicacion = 1 * 2
 division_flotante = 3 / 2 
 division_entera = 3 // 2
 potencia = 3 ** 3
@@ -16,7 +16,7 @@ print("Division entera:", division_entera)
 
 print("El residuo es:", mod)"""
 
-# Operadores matemáticos
+# Operadores matematicos
 
 numero = 1
 numero += 1
@@ -37,4 +37,4 @@ print ("Resultado:", resultado)"""
 
 """binario = "1101"
 convertido = int(binario, 2)
-print("¿Qué número en base 10 es binario?", convertido)"""
+print("¿Que numero en base 10 es binario?", convertido)"""
