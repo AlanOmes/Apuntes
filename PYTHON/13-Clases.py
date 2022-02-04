@@ -14,3 +14,8 @@ restaurant.mostrar_informacion()
 restaurant2 = Restaurant()
 restaurant2.agregar_restaurant ('Hamburguesas Python')
 restaurant2.mostrar_informacion()
+
+# Mostrar la informacion
+
+print (f'Nombre Restaurant: {restaurant.nombre}')
+print (f'Nombre Restaurant: {restaurant2.nombre}')
