@@ -15,5 +15,3 @@ elif numero == 5:
 else:
     print("Es menor que 5 y 10")     
 
-
-
