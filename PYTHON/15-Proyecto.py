@@ -40,10 +40,19 @@ def app():
             buscar_contacto()
             preguntar = False
         elif opcion == 5:
-            print ('Eliminar contacto')
+            eliminar_contacto()
             preguntar = False
         else:
             print ('Opcion no valida, intente de nuevo.')
+
+def eliminar_contacto():
+    nombre = input('Seleccione el Contacto que desea eliminar: ')
+
+    try:
+        os.remove(CARPETA + nombre + EXTENSION)
+        print('\r\nEliminado Correctamente')
+    except cajeta as identifier:
+        print('No existe ese contacto') 
 
 def buscar_contacto():
     nombre = input('Seleccione el Contacto que desea buscar: ')
@@ -60,8 +69,6 @@ def buscar_contacto():
     
     # Reiniciar la app
     app()
-
-
 
 def mostrar_contacto():
     archivos = os.listdir(CARPETA)
