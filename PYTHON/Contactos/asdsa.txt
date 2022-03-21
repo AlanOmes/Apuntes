@@ -1,3 +1,0 @@
-Nombre: asdsa
-Telefono: 12341
-Categoria: asdas

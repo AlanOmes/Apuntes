@@ -1,4 +1,5 @@
 from distutils import extension
+from logging import exception
 import os
 
 CARPETA = 'Contactos/' # Carpeta de Contactos
@@ -33,16 +34,47 @@ def app():
             editar_contacto()
             preguntar = False
         elif opcion == 3:
-            print ('Ver contactos')
+            mostrar_contacto()
             preguntar = False
         elif opcion == 4:
-            print ('Buscar contacto')
+            buscar_contacto()
             preguntar = False
         elif opcion == 5:
             print ('Eliminar contacto')
             preguntar = False
         else:
             print ('Opcion no valida, intente de nuevo.')
+
+def buscar_contacto():
+    nombre = input('Seleccione el Contacto que desea buscar: ')
+
+    try:
+        with open(CARPETA + nombre + EXTENSION) as contacto:
+            print('\r\nInformacion del Contacto: \r\n')
+            for linea in contacto:
+                print(linea.rstrip())
+            print('\r\n')
+    except IOError:
+        print('El archivo no existe')
+        print(IOError) 
+    
+    # Reiniciar la app
+    app()
+
+
+
+def mostrar_contacto():
+    archivos = os.listdir(CARPETA)
+
+    archivos_txt = [i for i in archivos if i.endswith(EXTENSION)] 
+
+    for archivo in archivos_txt:
+        with open (CARPETA + archivo) as contacto:
+            for linea in contacto:
+                # Imprime los contenidos
+                print(linea.rstrip())
+            # Imprime un separador entre contactos
+            print('\r\n') 
 
 def editar_contacto():
     nombre_anterior = input('Nombre del contacto a editar: ')
@@ -66,11 +98,17 @@ def editar_contacto():
             archivo.write(f'Telefono: {contacto.telefono}\n')
             archivo.write(f'Categoria: {contacto.categoria}\n')
 
-            # Renombrar el archivo
-            os.rename(CARPETA + nombre_anterior + EXTENSION, CARPETA + nombre + EXTENSION)
+        # Renombrar el archivo
+        os.rename(CARPETA + nombre_anterior + EXTENSION, CARPETA + nombre + EXTENSION) 
+
+        # Mostrar mensaje de exito
+        print('\r\nContacto editado Correctamente\r\n')
 
     else:
         print ('Ese contacto no existe')
+
+     # Reiniciar la app
+    app()
 
 def agregar_contacto():
     print ('\nEscribe los datos para agregar el nuevo Contacto\n')
@@ -114,7 +152,7 @@ def crear_directorio():
     if not os.path.exists(CARPETA):
         # Crear la carpeta en el caso de que no exista
         os.makedirs(CARPETA)
-    
+
 def existe_contacto(nombre):
     return os.path.isfile(CARPETA + nombre + EXTENSION)
 
