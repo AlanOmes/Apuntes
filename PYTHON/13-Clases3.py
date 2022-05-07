@@ -35,6 +35,6 @@ restaurant2.get_precio()
 # Tipos de Default:
 
 # Public: self.precio (el atributo se puede modificar en cualquier parte del programa)
-# PROTECTED: self.__precio (el atributo se puede modificar en la misma clase)
+# PROTECTED: self._precio (el atributo se puede modificar en la misma clase)
 # PRIVATE: self.__precio (el atributo solo se puede modificar con los metodos GETTERS y SETTERS)
     
