@@ -48,11 +48,11 @@ class A:
         del self.__nombre
 
 a = A('Alan')
+print(a.nombre) # getter
+
+a.nombre = 'Julieta' # setter
 print(a.nombre)
 
-a.nombre = 'Julieta'
-print(a.nombre)
-
-del a.nombre
+del a.nombre # deleter
 
 
